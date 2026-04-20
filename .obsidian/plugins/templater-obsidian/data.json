@@ -16,7 +16,7 @@
   "folder_templates": [
     {
       "folder": "templates",
-      "template": "templates/blog-template.md.md"
+      "template": "templates/blog-template.md"
     }
   ],
   "enable_file_templates": false,
@@ -29,7 +29,7 @@
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
-    "templates/blog-template.md.md"
+    "templates/blog-template.md"
   ],
   "startup_templates": [
     ""
