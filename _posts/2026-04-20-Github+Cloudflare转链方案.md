@@ -2,7 +2,8 @@
 title: Github+Cloudflare转链方案
 date: 2026-04-20 16:59:13 +08:00
 author: <gaoshouq>
-categories: []
+categories:
+  - 个人站
 tags:
   - 博客
 ---
