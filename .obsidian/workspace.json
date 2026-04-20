@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "templates/blog-template.md.md",
+                "file": "_posts/第二篇博客.md.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "blog-template.md"
+              "title": "第二篇博客.md"
             }
           }
         ]
@@ -184,8 +184,9 @@
   },
   "active": "0bdcfa449bb90e49",
   "lastOpenFiles": [
-    "_posts/2026-04-20-我的第一篇博客.md",
     "templates/blog-template.md.md",
+    "_posts/第二篇博客.md.md",
+    "_posts/2026-04-20-我的第一篇博客.md",
     "templates"
   ]
 }
