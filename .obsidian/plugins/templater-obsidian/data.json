@@ -29,7 +29,7 @@
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
-    "templates/blog-template.md"
+    ""
   ],
   "startup_templates": [
     "templates/blog-template.md"

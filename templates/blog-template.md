@@ -1,9 +1,9 @@
 ---
-title: "{{tp.file.title | replace: tp.file.creation_date("YYYY-MM-DD-"), ''}}"
-date: {{tp.date.now("YYYY-MM-DD HH:mm:ss")}} +0800
-categories: 
+title: <% tp.file.title %>
+date: <% tp.date.now("YYYY-MM-DD HH:mm:ss Z") %>
+author: <gaoshouq>
+categories: []
 tags: []
-permalink: /posts/{{tp.file.title}}/
 ---
 
-这里写文章内容...
+<% tp.file.cursor %>
