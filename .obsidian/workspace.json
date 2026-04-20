@@ -175,7 +175,6 @@
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
       "obsidian-git:Open Git source control": false,
@@ -184,8 +183,9 @@
   },
   "active": "0bdcfa449bb90e49",
   "lastOpenFiles": [
-    "templates/blog-template.md",
     "_posts/2026-04-20 我的第二篇博客.md",
+    "_posts/2026-04-20 我的第二篇博客.md",
+    "templates/blog-template.md",
     "_posts/2026-04-20-我的第一篇博客.md",
     "2026-04-20-第二篇博客.md.md",
     "_posts/2026-04-20-第二篇博客.md.md",
