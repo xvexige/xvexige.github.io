@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "_posts/2026-04-20-Github+Cloudflare转链方案.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "2026-04-20-Github+Cloudflare转链方案"
             }
           }
         ]
@@ -181,14 +181,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a6733c0dd883c8e0",
+  "active": "0bdcfa449bb90e49",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
+    "_posts/2026-04-20-我的第一篇博客.md",
     "2026-04-20-我的第二篇博客.md",
+    "conflict-files-obsidian-git.md",
     "README.md",
     "_posts/2026-04-20-我的第二篇博客.md",
     "_posts/2026-04-20-Github+Cloudflare转链方案.md",
-    "_posts/2026-04-20-我的第一篇博客.md",
     "templates/blog-template.md",
     "templates/2026-04-20 我的第二篇博客.md",
     "2026-04-20-第二篇博客.md.md",
