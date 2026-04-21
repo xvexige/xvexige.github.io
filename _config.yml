@@ -14,7 +14,7 @@ social:
   links:
     - https://github.com/xvexige
 theme_mode: dark
-avatar: "https://c-ssl.dtstatic.com/uploads/item/202006/25/20200625132002_tdoqk.thumb.400_0.jpg"
+avatar: "/assets/img/avatar.png"
 toc: true
 pwa:
   enabled: true
