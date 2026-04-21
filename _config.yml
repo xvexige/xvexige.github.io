@@ -14,7 +14,7 @@ social:
   links:
     - https://github.com/xvexige
 theme_mode: dark
-avatar: ""
+avatar: "/assets/img/avatar.png"
 toc: true
 pwa:
   enabled: true
