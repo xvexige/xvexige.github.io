@@ -1,5 +1,5 @@
 ---
-title: 未命名
+title: java_spring_petclinic学习笔记
 date: 2026-04-21 09:43:53 +08:00
 author: <gaoshouq>
 categories: []
