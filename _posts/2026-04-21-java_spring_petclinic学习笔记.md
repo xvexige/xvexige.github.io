@@ -63,18 +63,12 @@ tags: []
 这是个 Web 项目，浏览器和后端怎么交互的底层逻辑，你得懂：
 
 - **HTTP 协议基础**：
-    
     - 常用请求方法（`GET`/`POST`）、请求头 / 响应头、状态码（200/404/500）
     - 比如 `OwnerController` 里的 `@GetMapping("/owners/{ownerId}")`，本质就是接收 HTTP GET 请求
-    
 - **Servlet 基础概念**：
-    
     - 知道「请求分发、视图解析」的底层逻辑就行（Spring Boot 封装了 Servlet，但核心思想没变）
-    
 - **HTML/CSS 基础（入门级）**：
-    
     - 能看懂简单的 HTML 表单、标签，知道页面怎么提交数据、渲染内容（项目里用 Thymeleaf 模板，懂基础 HTML 就能看懂）
-    
 
 > 学习建议：不用学复杂的前端框架，懂「表单提交、URL 传参、页面渲染」这几个核心概念就够了。
 
@@ -85,21 +79,15 @@ tags: []
 这个项目是标准 Spring Boot 应用，不懂 Spring Boot 的核心概念，就看不懂项目的配置和注解：
 
 - **Spring 核心思想**：
-    
     - **IOC/DI（控制反转 / 依赖注入）**：为什么 `@Autowired` 能直接注入 Service 对象，不用手动 `new`？（项目里的 Service、Repository 全靠这个管理）
     - **AOP（面向切面编程）**：了解概念即可（比如事务、日志的底层实现）
-    
 - **Spring MVC 核心流程**：
-    
     - 请求怎么从浏览器到 Controller？Controller 怎么返回页面 / 数据？
-    - 常用注解：`@Controller`/`@RestController`、`@RequestMapping`、`@RequestParam`/`@PathVariable`
-    
+    - 常用注解：`@Controller`/`@RestController`、`@RequestMapping`、`@RequestParam`/`@PathVariable
 - **Spring Boot 特性**：
-    
     - `@SpringBootApplication` 注解的作用（项目的启动类）
     - 自动配置（为什么不用写 `web.xml` 或 Spring 配置文件）
     - `application.properties` 配置文件怎么生效（比如端口、数据库配置）
-    
 
 > 学习建议：可以边学项目边补，遇到不懂的注解 / 配置，回头查对应的概念，效率更高。
 
@@ -303,3 +291,9 @@ spring-petclinic/
 1. 项目是**标准 Spring Boot 分层架构**，结构和企业项目完全一致
 2. 学习核心：**断点调试看流程 + 吃透一个功能模块 + 动手改代码**
 3. 这个项目吃透了，你就能独立开发 Spring Boot Web 项目了！
+
+
+# 知识点
+## MVC架构是什么
+---
+**MVC** 是一种经典的软件架构模式，用于将应用程序划分为三个核心组件：**Model（模型）**、**View（视图）** 和 **Controller（控制器）**。它的主要目的是**分离业务逻辑、用户界面和用户输入处理**，从而提高代码的可维护性、可扩展性和复用性。

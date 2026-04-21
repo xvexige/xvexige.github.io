@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 225.5
   },
   "right": {
     "id": "0b46b6e358d11f44",
@@ -193,7 +193,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "47e4954e8e03d960",
+  "active": "a6733c0dd883c8e0",
   "lastOpenFiles": [
     "_posts/2026-04-21-java_spring_petclinic学习笔记.md",
     "_posts/2026-04-20-设计模式学习笔记.md",
