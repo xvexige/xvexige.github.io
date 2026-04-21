@@ -34,7 +34,141 @@ tags: []
     - `model`包：实体类，对应数据库表结构。
 
 
+## ✅ 必须掌握的核心基础
+这部分是看懂项目代码的前提，不建议跳过。
 
+### 1. Java 语言基础（重中之重）
+
+这个项目是标准 Java 应用，代码全是 Java 写的，你至少要掌握：
+
+- **基础语法**：变量、数据类型、流程控制（if/for/while）、方法定义与调用
+- **面向对象（OOP）**：
+    
+    - 类、对象、属性、方法的定义（项目里的 `Owner`/`Pet` 实体类全是这个）
+    - 封装、继承、多态（比如 `Pet` 类继承自 `BaseEntity`）
+    
+- **核心工具类**：
+    
+    - 集合框架（`List`/`Map`/`Optional`，项目里到处都在用）
+    - 异常处理（`try-catch`、自定义异常）
+    
+- **Java 8+ 新特性**：Lambda 表达式、Stream 流、`Optional` 空值处理（Spring Boot 项目里高频出现）
+
+> 学习建议：如果基础薄弱，先花 1-2 天过一遍「面向对象 + 集合 + Java 8 新特性」，不用啃完所有语法，够用就行。
+
+---
+
+### 2. Java Web 基础（理解项目的 “请求 - 响应” 逻辑）
+
+这是个 Web 项目，浏览器和后端怎么交互的底层逻辑，你得懂：
+
+- **HTTP 协议基础**：
+    
+    - 常用请求方法（`GET`/`POST`）、请求头 / 响应头、状态码（200/404/500）
+    - 比如 `OwnerController` 里的 `@GetMapping("/owners/{ownerId}")`，本质就是接收 HTTP GET 请求
+    
+- **Servlet 基础概念**：
+    
+    - 知道「请求分发、视图解析」的底层逻辑就行（Spring Boot 封装了 Servlet，但核心思想没变）
+    
+- **HTML/CSS 基础（入门级）**：
+    
+    - 能看懂简单的 HTML 表单、标签，知道页面怎么提交数据、渲染内容（项目里用 Thymeleaf 模板，懂基础 HTML 就能看懂）
+    
+
+> 学习建议：不用学复杂的前端框架，懂「表单提交、URL 传参、页面渲染」这几个核心概念就够了。
+
+---
+
+### 3. Spring Boot 核心基础（看懂项目的 “骨架”）
+
+这个项目是标准 Spring Boot 应用，不懂 Spring Boot 的核心概念，就看不懂项目的配置和注解：
+
+- **Spring 核心思想**：
+    
+    - **IOC/DI（控制反转 / 依赖注入）**：为什么 `@Autowired` 能直接注入 Service 对象，不用手动 `new`？（项目里的 Service、Repository 全靠这个管理）
+    - **AOP（面向切面编程）**：了解概念即可（比如事务、日志的底层实现）
+    
+- **Spring MVC 核心流程**：
+    
+    - 请求怎么从浏览器到 Controller？Controller 怎么返回页面 / 数据？
+    - 常用注解：`@Controller`/`@RestController`、`@RequestMapping`、`@RequestParam`/`@PathVariable`
+    
+- **Spring Boot 特性**：
+    
+    - `@SpringBootApplication` 注解的作用（项目的启动类）
+    - 自动配置（为什么不用写 `web.xml` 或 Spring 配置文件）
+    - `application.properties` 配置文件怎么生效（比如端口、数据库配置）
+    
+
+> 学习建议：可以边学项目边补，遇到不懂的注解 / 配置，回头查对应的概念，效率更高。
+
+---
+
+### 4. 数据库基础（看懂数据怎么存、怎么查）
+
+项目用的是内存数据库 HSQLDB，不用你自己装，但你得懂：
+
+- **SQL 基础**：增删改查（CRUD）、建表语句（`schema.sql` 里的初始化脚本）
+- **关系型数据库概念**：表、字段、主键、外键（比如 `Owner` 和 `Pet` 是一对多关系）
+- **ORM 思想**：对象关系映射（为什么 `Owner` 实体类能直接对应数据库表，不用写 SQL）
+
+> 学习建议：不用专门学 HSQLDB，懂 MySQL/SQLite 的基础概念就行，所有关系型数据库逻辑都一样。
+
+---
+
+## 📌 推荐掌握的进阶基础（学项目会更轻松）
+
+这些知识和项目强相关，提前了解能帮你少走很多弯路：
+
+### 1. Spring Data JPA
+
+项目的 `repository` 层全靠它实现，不用写 SQL 就能操作数据库：
+
+- 实体类注解：`@Entity`、`@Id`、`@Column`、`@OneToMany`（实体类和数据库表的映射规则）
+- Repository 接口定义：继承 `JpaRepository` 就能直接用 `save`/`findById`/`findAll` 方法
+- 方法命名规则：比如 `findByLastNameContaining` 这种方法名，Spring Data JPA 会自动生成 SQL
+
+### 2. Thymeleaf 模板引擎
+
+项目的前端页面用的是 Thymeleaf，懂基础语法就能看懂页面怎么渲染数据：
+
+- 常用标签：`th:text`（显示文本）、`th:each`（循环遍历列表）、`th:action`（表单提交地址）
+- 怎么把后端 Controller 返回的数据，渲染到 HTML 页面上
+
+### 3. Maven 构建工具
+
+你选了 Maven 导入项目，得懂基础的 Maven 操作：
+
+- `pom.xml` 结构：依赖管理、项目坐标、插件配置
+- 怎么刷新依赖、解决依赖冲突（比如 `External Libraries` 里的包怎么来的）
+- 常用命令：`mvn compile`/`mvn package`/`mvn spring-boot:run`
+
+---
+
+## 🎁 可选加分项（学完项目再补也不迟）
+
+这些知识能帮你更深入理解项目，但不是入门必须的：
+
+- **Git 基础**：你已经 clone 了项目，懂 `clone`/`commit`/`push` 就行，方便后续修改代码、提交版本
+- **IDEA 调试技巧**：断点调试、查看变量、条件断点（之前你调试过，熟练用这个就能跟着请求流程走一遍代码）
+- **单元测试**：项目 `test` 目录下的代码，了解 Spring Boot 单元测试怎么写（比如 `@SpringBootTest` 注解）
+- **Docker 基础**：项目里有 `docker-compose.yml`，学完可以试试用 Docker 容器运行项目，了解容器化部署
+
+---
+
+## 💡 给你的学习顺序建议（避免 “学了就忘”）
+
+不用等所有基础都学完再碰项目，**边学项目边补基础**效率最高：
+
+1. **先跟着流程走一遍**：按之前说的，用断点调试从浏览器请求到数据库查询，把整个流程跑通，建立整体认知
+2. **遇到不懂的知识点，针对性补基础**：
+    
+    - 看不懂 `@Autowired` → 补 Spring DI 知识
+    - 看不懂 `OwnerRepository` → 补 Spring Data JPA 知识
+    - 看不懂页面渲染 → 补 Thymeleaf 知识
+    
+3. **学完一个模块，回头梳理对应的基础**：比如学完 Owner 模块，就整理一下 Controller→Service→Repository 各层用到的知识点，加深理解
 
 
 # 一、spring-petclinic 核心项目结构树

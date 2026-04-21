@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9d5c04caea6cfeea",
+        "id": "130f6f3418c73996",
         "type": "tabs",
         "children": [
           {
-            "id": "0bdcfa449bb90e49",
+            "id": "47e4954e8e03d960",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "_posts/2026-04-21-java_spring_petclinic学习笔记.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -181,10 +181,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0bdcfa449bb90e49",
+  "active": "47e4954e8e03d960",
   "lastOpenFiles": [
-    "_posts/2026-04-20-设计模式学习笔记.md",
     "_posts/2026-04-21-java_spring_petclinic学习笔记.md",
+    "_posts/2026-04-20-设计模式学习笔记.md",
     "_posts/2026-04-20-Github+Cloudflare转链方案.md",
     "_posts/2026-04-20-我的第一篇博客.md",
     "2026-04-20-我的第二篇博客.md",
